@@ -92,7 +92,7 @@ main.container{
 
 .input-box label{
    font-size: 14px; 
-   color: var(--color-dark-50);
+   color: var(--color-dark-900);
 }
 
 .input-field{
@@ -101,7 +101,7 @@ main.container{
     gap: 15px;
     padding: 3px;
     cursor: text;
-    border-bottom: 1px solid var(--color-dark-50);
+    border-bottom: 2px solid var(--color-dark-50);
 }
 
 .input-field i{
