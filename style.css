@@ -39,6 +39,7 @@ main.container{
     gap: 30px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
     height: fit-content;
+    animation: dark-to-light 0.3s ease-in-out;
 }
 
 .form-header{
@@ -92,7 +93,7 @@ main.container{
 
 .input-box label{
    font-size: 14px; 
-   color: var(--color-dark-900);
+   color: var(--color-dark-50);
 }
 
 .input-field{
@@ -124,7 +125,7 @@ main.container{
 #forgotPassword a{
     text-decoration: none;
     font-size: 12px;
-    color: var(--color-dark-900);
+    color: var(--color-dark-50);
 }
 
 #forgotPassword a:hover{
@@ -148,4 +149,33 @@ main.container{
 }
 
 
+.dark#loginForm{
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
+}
 
+.dark#loginForm .input-field input,
+.dark#loginForm .input-field i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100%{
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark {
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100%{
+        background-color: var(--color-dark-100);
+    }
+}
